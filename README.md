@@ -13,7 +13,7 @@ npm install @anikghosh256/compile-template
 ## Usage
 
 ```js
-const compile = require('compile-template');
+const compile = require('@anikghosh256/compile-template');
 
 const compiled = compile('filepath', { name: 'John' }); // filepath and variables
 ```
