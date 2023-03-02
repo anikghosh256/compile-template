@@ -1,6 +1,6 @@
 {
   "name": "@anikghosh256/compile-template",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Minimal templates for Node.js",
   "main": "index.js",
   "scripts": {
