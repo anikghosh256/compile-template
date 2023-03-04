@@ -37,9 +37,24 @@ console.log(compiled); // you can also write to a file or do whatever you want w
 ```html
 <!-- template.ct -->
 <h1>Hello, ${name}!</h1>
+<h2>How are you? ${capitalize(name)}</h2>
+<h3>Lowercase: ${lowercase(name)}</h3>
 ```
 
 ```html
 <!-- output -->
 <h1>Hello, John!</h1>
+<h2>How are you? John</h2>
+<h3>Lowercase: john</h3>
 ```
+
+### Functions
+- `capitalize(string)` - Capitalizes the first letter of a string
+- `lowercase(string)` - Converts a string to lowercase
+- `uppercase(string)` - Converts a string to uppercase
+
+
+## Notes
+- You can't provide whitespace in the function name, so `capitalize (name)` won't work. You can use `capitalize(name)` instead.
+- `${ name}` won't work. You can use ${name} instead.
+- You can use any extension for the template file, but it's recommended to use `.ct` for compile-template files.
