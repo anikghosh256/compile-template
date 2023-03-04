@@ -1,1 +1,4 @@
 Hello ${name}.
+Hello ${lowercase(name)}.
+Hello ${uppercase(name)}.
+hello ${capitalize(name)}.
