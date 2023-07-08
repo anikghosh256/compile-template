@@ -2,3 +2,7 @@ Hello ${name}.
 Hello ${lowercase(name)}.
 Hello ${uppercase(name)}.
 hello ${capitalize(name)}.
+One ${singularize(books)}.
+Two ${pluralize(book)}.
+One ${capSingularize(books)}.
+Two ${capPluralize(book)}.

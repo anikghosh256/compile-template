@@ -52,6 +52,10 @@ console.log(compiled); // you can also write to a file or do whatever you want w
 - `capitalize(string)` - Capitalizes the first letter of a string
 - `lowercase(string)` - Converts a string to lowercase
 - `uppercase(string)` - Converts a string to uppercase
+- `pluralize(string)` - Change the word to its plural
+- `singularize(string)` - Change the word to its singular
+- `capPluralize(string)` - capitalize + pluralize
+- `capSingularize(string)` - capitalize + singularize
 
 
 ## Notes
