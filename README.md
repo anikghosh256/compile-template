@@ -56,6 +56,7 @@ console.log(compiled); // you can also write to a file or do whatever you want w
 - `singularize(string)` - Change the word to its singular
 - `capPluralize(string)` - capitalize + pluralize
 - `capSingularize(string)` - capitalize + singularize
+- `time()` - return timestamp
 
 
 ## Notes
