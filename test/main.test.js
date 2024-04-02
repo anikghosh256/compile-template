@@ -17,7 +17,7 @@ describe('compile', () => {
   })
 })
 
-describe('compile', () => {
+describe('Time test', () => {
   const filePath = join(__dirname, 'time-template.ct')
 
   it('should return time', () => {
@@ -25,5 +25,15 @@ describe('compile', () => {
 
     // check if the result is a number string
     expect(parseInt(result)).not.toBeNaN()
+  })
+})
+
+describe('Content test', () => {
+  const content = 'Hello ${name}'
+
+  it('should return time', () => {
+    const result = compile(null, { name: 'Q' }, content).trim()
+
+    expect(result).toBe('Hello Q')
   })
 })

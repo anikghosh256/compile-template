@@ -30,7 +30,7 @@ const compiled = compile('filedir/filename.ct', { name: 'John' }); // filepath a
 // index.js
 const compile = require('@anikghosh256/compile-template');
 
-const compiled = compile('template.ct', { name: 'John' }); 
+const compiled = compile('template.ct', { name: 'John' }); // you can pass file content as third argument 
 console.log(compiled); // you can also write to a file or do whatever you want with the compiled template
 ```
 

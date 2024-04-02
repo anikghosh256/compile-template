@@ -4,13 +4,17 @@ const functions = require('./helpers/functions')
 /**
  * Read file and compile it with variables.
  *
- * @param {string} filePath - Path to file.
+ * @param {string} filePath - Path to file (if you just want to compile a string, pass null).
  * @param {object} variables - Variables to compile.
+ * @param {string} content - File content to compile (if you don't have a file URL).
  * @returns {string} Compiled content.
  */
-function compile(filePath, variables = {}) {
+function compile(filePath = null, variables = {}, fileContent = null) {
+  let content = fileContent
   // Read the content of the file
-  const content = fs.readFileSync(filePath, 'utf8')
+  if (filePath) {
+    content = fs.readFileSync(filePath, 'utf8')
+  }
 
   // Regex pattern for variables. It can be ${name} or ${f(name)}
   const pattern = /\$\{(\w+|\w+\(\w+\))\}/g
