@@ -40,3 +40,25 @@ exports.capSingularize = function (str) {
   str = exports.capitalize(str)
   return pluralize.singular(str)
 }
+
+// date helpers
+
+// time
+exports.time = function (time = 'getTime') {
+  const dateMethods = {
+    getTime: 'getTime',
+    getDate: 'getDate',
+    getDay: 'getDay',
+    getFullYear: 'getFullYear',
+    getHours: 'getHours',
+    now: 'getTime'
+  }
+
+  if (dateMethods[time]) {
+    return new Date()[dateMethods[time]]()
+  }
+}
+
+exports.nonArgumentFunctions = {
+  time: exports.time
+}
